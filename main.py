@@ -7,3 +7,4 @@ class Solution:
                 return True
             seen.add(i)
         return False
+print(Solution.containsDuplicate(nums))
