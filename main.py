@@ -1,10 +1,8 @@
-nums = [1,2,3,1]
-class Solution:
-    def containsDuplicate(self, nums: list[int]) -> bool:
+def containsDuplicate(nums):
         seen = set()
         for i in nums:
             if i in seen:
                 return True
             seen.add(i)
         return False
-print(Solution.containsDuplicate(nums))
+print(containsDuplicate([1,2,3,4,5]))
